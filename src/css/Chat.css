@@ -1,0 +1,170 @@
+.chat {
+  height: 100%;
+  margin: 0 5px;
+  display: grid;
+  grid-template-rows: 1fr 60px;
+  grid-template-columns: 1fr;
+  grid-gap: 0;
+  overflow: hidden;
+  border: 5px solid #263346;
+  border-radius: 10px;
+}
+
+.messages {
+  width: 100%;
+  height: auto;
+  overflow: scroll;
+}
+
+ul {
+  list-style: none;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.message-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5px;
+}
+.message-wrap.right {
+  justify-content: flex-end;
+}
+
+.message-sender {
+  font-size: small;
+}
+
+.message-text {
+  font-size: medium;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fafafa;
+  background-color: #263346;
+  width: auto;
+  max-width: 90%;
+  hyphens: auto;
+}
+
+.input {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  margin: 5px -5px;
+}
+
+.input > * {
+  border: 5px solid #263346;
+  height: 100%;
+  padding: 5px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input input {
+  border-radius: 10px 0 0 10px;
+  width: 100%;
+  resize: none;
+  font-size: medium;
+  border-right: none;
+}
+
+.input input:focus {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5) inset;
+}
+
+.input button {
+  border-radius: 0 10px 10px 0;
+  border-left: none;
+  background-color: #263346;
+  width: 80px;
+}
+
+.input button:hover {
+  background-color: #364863;
+  cursor: pointer;
+}
+
+.input button:active {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 1) inset;
+  cursor: pointer;
+}
+
+.input svg {
+  height: 70%;
+  width: 70%;
+  color: #fafafa;
+}
+
+.typing {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  opacity: 1;
+  box-sizing: border-box;
+  height: auto;
+  transition: height 200ms 0ms, opacity 200ms 200ms;
+}
+
+.typing.hide {
+  transition: height 200ms 200ms, opacity 200ms 0ms;
+  opacity: 0;
+  height: 0;
+}
+
+.typing span {
+  color: gray;
+}
+.is-typing {
+  margin-left: 10px;
+  width: 40px;
+  justify-content: space-around;
+  display: flex;
+}
+
+.is-typing > div {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: gray;
+}
+
+.o1 {
+  animation: typing 1s linear infinite;
+  animation-delay: 00s;
+}
+
+.o2 {
+  animation: typing 1s linear infinite;
+  animation-delay: 00.1s;
+}
+
+.o3 {
+  animation: typing 1s linear infinite;
+  animation-delay: 00.2s;
+}
+
+@keyframes typing {
+  0% {
+    transform: scale(1.5);
+  }
+
+  35% {
+    transform: scale(1);
+  }
+
+  75% {
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .chat{
+      margin: 0;
+    
+  }
+}
