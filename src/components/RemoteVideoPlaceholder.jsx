@@ -59,7 +59,7 @@ export default class RemoteVideoPlaceholder extends Component {
       return (
         <div>
           <h1>
-            Welcome to VideoChat Roulette!{" "}
+            Welcome to VideoChat Rockbit Webapp!{" "}
             <span role="img" aria-label="tongue">
               &#128539;
             </span>
