@@ -23,10 +23,8 @@ export default class RemoteVideoPlaceholder extends Component {
       return (
         <div>
           <h1>
-            searching...{" "}
-            <span role="img" aria-label="thinking">
-              &#129300;
-            </span>{" "}
+            finding stranger user{" "}
+            ... {" "}
           </h1>
           <Loop
             className="rotating"
@@ -40,16 +38,10 @@ export default class RemoteVideoPlaceholder extends Component {
       return (
         <div>
           <h1>
-            Stranger disconnected{" "}
-            <span role="img" aria-label="surprised">
-              &#128550;
-            </span>
+            Stranger disconnected.{" "}
           </h1>
           <h3>
             Click 'next' for continue!{" "}
-            <span role="img" aria-label="cool">
-              &#128526;
-            </span>
           </h3>
         </div>
       );
@@ -59,10 +51,7 @@ export default class RemoteVideoPlaceholder extends Component {
       return (
         <div>
           <h1>
-            Welcome to VideoChat Rockbit Webapp!{" "}
-            <span role="img" aria-label="tongue">
-              &#128539;
-            </span>
+            Welcome to Rock Bit Web Video Chat App!{" "}
           </h1>
           <h3>online users: {this.state.usersCount}</h3>
         </div>
