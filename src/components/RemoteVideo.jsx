@@ -66,10 +66,7 @@ export default class RemoteVideo extends React.Component {
           <video ref={this.remoteVideo} height="100%" autoPlay playsInline></video>
         ) : (
             <h1>
-              You are connected but stranger don't want you to see him{' '}
-              <span role="img" aria-label="surprised">
-                &#128546;
-            </span>
+              You are connected but stranger doesn't want to show up{' '}
             </h1>
           )}
       </div>
