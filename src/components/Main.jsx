@@ -122,18 +122,12 @@ export default class Main extends React.Component {
               ) : (
                   <div>
                     <h1>
-                      we can't get your camera{' '}
-                      <span role="img" aria-label="surprised">
-                        &#128546;
-                    </span>
+                      We can't get your camera{' '}
                     </h1>
                     <h3>
                       but you still can use this app{' '}
-                      <span role="img" aria-label="surprised">
-                        &#128527;
-                    </span>
                     </h3>
-                    <h3>or try again to give us access to your camera</h3>
+                    <h3>or try again to give us access to your camera!</h3>
                   </div>
                 )}
             </div>
