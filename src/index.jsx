@@ -6,6 +6,7 @@ import './css/index.css';
 import 'react-app-polyfill/ie9';
 import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
+import registerServiceWorker from './registerServiceWorker';
 
 
 class App extends React.Component {
