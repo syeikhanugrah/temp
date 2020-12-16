@@ -17,7 +17,7 @@ export default class Buttons extends Component {
           </button>
           {(this.props.connected || this.props.disconnected) && (
             <button className="next" onClick={this.props.next}>
-              Next <Next />
+              Skip <Next />
             </button>
           )}
         </div>
