@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import socket from './socket';
+import signaling from './signaling';
 import Main from './components/Main';
 import './css/index.css';
 
