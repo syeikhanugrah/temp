@@ -3,9 +3,6 @@ import ReactDOM from 'react-dom';
 import socket from './socket';
 import Main from './components/Main';
 import './css/index.css';
-import 'react-app-polyfill/ie9';
-import 'react-app-polyfill/ie11';
-import 'react-app-polyfill/stable';
 
 
 class App extends React.Component {
