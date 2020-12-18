@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import socket from './socket';
+import adapter from 'webrtc-adapter';
 import Main from './components/Main';
 import './css/index.css';
 
