@@ -41,7 +41,7 @@ export default class RemoteVideoPlaceholder extends Component {
             Stranger disconnected.{" "}
           </h1>
           <h3>
-            Click 'next' for continue!{" "}
+            Click 'Skip' button to continue!{" "}
           </h3>
         </div>
       );
