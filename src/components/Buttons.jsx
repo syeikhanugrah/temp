@@ -26,7 +26,7 @@ export default class Buttons extends Component {
             </>
           ) : ''}
         </div>
-        <div>
+        <div style={{ textAlign: "center" }}>
           <SocialMediaButton user={user} signInWithFacebook={signInWithFacebook} signInWithGoogle={signInWithGoogle} signOut={signOut} />
         </div>
         <span>
