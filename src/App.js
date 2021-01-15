@@ -26,8 +26,6 @@ class App extends React.Component {
       signInWithFacebook
     } = this.props;
 
-    console.log(this.props);
-
     return (
       <div className="root">
 
