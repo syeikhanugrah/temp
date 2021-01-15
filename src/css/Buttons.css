@@ -15,15 +15,15 @@
 }
 
 .buttons > button {
-  margin: 0 10px;
-  padding: 15px;
+  margin: 0 8px;
+  padding: 8px;
   outline: none;
   border: none;
   border-radius: 10px;
   transition: 0.2s;
   cursor: pointer;
   height: 70px;
-  width: 100px;
+  width: 90px;
   font-size: 100%;
 }
 
