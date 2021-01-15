@@ -85,6 +85,8 @@ export default class Main extends React.Component {
   }
 
   render() {
+    const { user, signInWithFacebook, signInWithGoogle, signOut } = this.props;
+
     return (
       <div className="main">
         <div className="video-area">
@@ -135,6 +137,10 @@ export default class Main extends React.Component {
         </div>
         <div className="bottom-area">
           <Buttons
+            user={user}
+            signInWithFacebook={signInWithFacebook}
+            signInWithGoogle={signInWithGoogle}
+            signOut={signOut}
             searching={!this.state.toId && this.state.start}
             connected={this.state.toId ? true : false}
             disconnected={this.state.disconnected}

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Next from '@material-ui/icons/SkipNext';
 
+import SocialMediaButton from './SocialMediaButton';
 import './../css/Buttons.css';
 
 export default class Buttons extends Component {
   render() {
+    const { user, signInWithFacebook, signInWithGoogle, signOut } = this.props;
     return (
       <div className="left">
         <div className="buttons">
@@ -20,6 +21,9 @@ export default class Buttons extends Component {
               Skip
             </button>
           )}
+        </div>
+        <div>
+          <SocialMediaButton user={user} signInWithFacebook={signInWithFacebook} signInWithGoogle={signInWithGoogle} signOut={signOut} />
         </div>
         <span>
           connected:
